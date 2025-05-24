@@ -1,19 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 body {
-    background-color: #2c3141;
-    font-family: Inter;
-    color: #fcfcfcfb;
+    background-color: #121212;
+    font-family: "Ubuntu", sans-serif;
+    color: #E0E0E0 ;
 }
 
 p {
     width: 900px;
-    background-color: #5988FF;
     margin-left: auto;
     margin-right: auto;
 }
 
 b {
-    color: #FD98FB;
-    background-color: #5988FF;
+    color: #A0A0A0;
 }
 
 a {
@@ -25,15 +25,14 @@ a {
 
 li {
     width: 900px;
-    background-color: #5988FF;
     margin-left: auto;
     margin-right: auto;
 }
 
 h1 {
-    color: #FFFFFF;
-    width: 700px;
-    background-color: #5988FF;
+    color: #E0E0E0;
+    width: 450px;
+    background-color: #252525;
     font-family: Inter;
     margin-left: auto;
     margin-right: auto;
@@ -42,10 +41,28 @@ h1 {
     text-align: center;
 }
 
+@keyframes color-change {
+    0% { color: #a8a8a8; width: 450px; }
+    10% { color: #949494; width: 470px; }
+    20% { color: #808080; width: 490px; }
+    30% { color: #6c6c6c; width: 510px; }
+    40% { color: #585858; width: 530px; }
+    50% { color: #444444; width: 550px; }
+    60% { color: #585858; width: 530px; }
+    70% { color: #6c6c6c; width: 510px; }
+    80% { color: #808080; width: 490px; }
+    90% { color: #949494; width: 470px; }
+    100% { color: #a8a8a8; width: 450px; }
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
+}
+
 h2 {
-    color: #FFFFFF;
-    width: 700px;
-    background-color: #5988FF;
+    color: #E0E0E0;
+    width: 750px;
+    background-color: #252525;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -53,9 +70,35 @@ h2 {
     text-align: center;
 }
 
+@keyframes color-change2 {
+    0% { color: #a8a8a8; width: 750px; }
+    10% { color: #949494; width: 770px; }
+    20% { color: #808080; width: 790px; }
+    30% { color: #6c6c6c; width: 810px; }
+    40% { color: #585858; width: 830px; }
+    50% { color: #444444; width: 850px; }
+    60% { color: #585858; width: 830px; }
+    70% { color: #6c6c6c; width: 810px; }
+    80% { color: #808080; width: 790px; }
+    90% { color: #949494; width: 770px; }
+    100% { color: #a8a8a8; width: 750px; }
+}
+
+h2:hover {
+    animation: color-change2 3s infinite;
+}
+
 img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    position: absolute;
+    display: block;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 2px solid #383838;
+}
+
+iframe {
+    width: 700px;
 }
